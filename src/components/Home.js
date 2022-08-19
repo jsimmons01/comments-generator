@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Card, CardTitle, CardBody } from "reactstrap";
+import { Card, CardHeader, CardBody } from "reactstrap";
 import StudentComment from "./StudentComment";
 import StudentInfo from "./StudentInfo";
 
@@ -7,9 +7,11 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <Card>
+        <Card className='my-2 text-center'>
+          <CardHeader tag='h1'>
+          Teacher Comment Generator
+          </CardHeader>
           <CardBody>
-            <CardTitle>Teacher Comment Generator</CardTitle>
             <StudentInfo />
             <StudentComment />
           </CardBody>

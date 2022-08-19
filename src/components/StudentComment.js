@@ -1,6 +1,7 @@
 import { COMMENTS } from "../comments";
 import React from "react";
 
+
 const StudentComment = () => {
 
   const comments = COMMENTS;
