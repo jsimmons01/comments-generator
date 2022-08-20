@@ -1,16 +1,17 @@
 import { COMMENTS } from "../comments";
 import React from "react";
+import StudentInfo from './StudentInfo'
 
 
-const StudentComment = () => {
+const StudentComment = ({ studentName, gender, level }) => {
 
   const comments = COMMENTS;
   return (
-    <>
-    {comments.map((comment)=> (
-      <p key={comment.id}>{comment.text}</p>
-    ))}
-    </>
+    <div>
+    
+     {comments.filter((comment) => comment.gender === gender)}
+      
+    </div>
   )
 
  

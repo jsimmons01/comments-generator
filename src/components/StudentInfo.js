@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
-import StudentComment from "./StudentComment";
+import { COMMENTS } from "../comments";
+
 
 /*************************************************** TO DO**************************************************************************
     *******************************Get the app working to dos******************
@@ -28,16 +29,17 @@ class StudentInfo extends Component {
       studentName: " ",
       gender: " ",
       level: "On Grade Level",
+      comments: COMMENTS,
     };
 
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.toggleComment = this.toggleComment.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     //this.insertName = this.insertName.bind(this);
   }
-  handleSubmit(event) {
-    alert("Loading Comment." + JSON.stringify(this.state));
-    event.preventDefault();
-  }
+  toggleComment() {
+  
+    alert(this.comments);
+    }  
 
   handleInputChange(event) {
     const target = event.target;
@@ -53,7 +55,7 @@ class StudentInfo extends Component {
     return (
       <div className="row row-content">
         <div className="col-md">
-          <Form onSubmit={this.handleSubmit}>
+          <Form onSubmit={this.toggleComment}>
             <FormGroup row>
               <Label htmlFor="studentName" md={4}>
                 Student's Name:

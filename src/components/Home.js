@@ -1,10 +1,12 @@
-import { Component } from "react";
+import { useState } from "react";
 import { Card, CardHeader, CardBody } from "reactstrap";
-import StudentComment from "./StudentComment";
 import StudentInfo from "./StudentInfo";
 
-class Home extends Component {
-  render() {
+
+const Home = () => {
+
+ 
+   
     return (
       <div className="container">
         <Card className='my-2 text-center'>
@@ -12,8 +14,8 @@ class Home extends Component {
           Teacher Comment Generator
           </CardHeader>
           <CardBody>
-            <StudentInfo />
-            <StudentComment />
+            <StudentInfo  />
+           
           </CardBody>
         </Card>
 
@@ -25,7 +27,7 @@ class Home extends Component {
       </div>
     );
   }
-}
+
 
 function Directions() {
   return (
