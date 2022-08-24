@@ -1,18 +1,23 @@
 import { COMMENTS } from "../comments";
-import React from "react";
-import StudentInfo from './StudentInfo'
 
 
-const StudentComment = ({ studentName, gender, level }) => {
 
-  const comments = COMMENTS;
-  return (
-    <div>
-    
-     {comments.filter((comment) => comment.gender === gender)}
-      
-    </div>
-  )
+
+const StudentComment = (studentName) => {
+
+  // const findComment = (
+  //   COMMENTS.find((comment) => comment.id > 3)
+  // )
+   
+ 
+  return(
+
+   <p>
+     
+   {this.props.studentName} 
+   
+  </p>
+  ) 
 
  
 };

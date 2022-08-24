@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Card, CardHeader, CardBody } from "reactstrap";
-import StudentInfo from "./StudentInfo";
+import StudentComment from "./StudentComment";
+import StudentInfo from "./StudentInfo"
+
 
 
 const Home = () => {
-
- 
    
     return (
       <div className="container">
@@ -14,8 +14,8 @@ const Home = () => {
           Teacher Comment Generator
           </CardHeader>
           <CardBody>
-            <StudentInfo  />
-           
+            <StudentInfo />
+            
           </CardBody>
         </Card>
 

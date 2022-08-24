@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
 import { COMMENTS } from "../comments";
+import StudentComment from "./StudentComment";
+
 
 
 /*************************************************** TO DO**************************************************************************
@@ -30,16 +32,14 @@ class StudentInfo extends Component {
       gender: " ",
       level: "On Grade Level",
       comments: COMMENTS,
+     
     };
-
-    this.toggleComment = this.toggleComment.bind(this);
+    
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.toggleComment = this.toggleComment.bind(this);
     //this.insertName = this.insertName.bind(this);
   }
-  toggleComment() {
-  
-    alert(this.comments);
-    }  
+   
 
   handleInputChange(event) {
     const target = event.target;
@@ -51,11 +51,21 @@ class StudentInfo extends Component {
     });
   }
 
+  toggleComment(){
+    alert("Loading...")
+    // this.setState({
+    //   comments: this.state.comments.map((comment) => <p key={comment.id}>{comment.text}</p>)
+    // })
+    
+   
+  }
+
+
   render() {
     return (
       <div className="row row-content">
         <div className="col-md">
-          <Form onSubmit={this.toggleComment}>
+          <Form onSubmit={this.toggleComment} >
             <FormGroup row>
               <Label htmlFor="studentName" md={4}>
                 Student's Name:
@@ -117,8 +127,16 @@ class StudentInfo extends Component {
                 </Button>
               </Col>
             </FormGroup>
+            <FormGroup>
+             <Label for="exampleText">
+                 Comments
+             </Label>
+              
+            </FormGroup>
+            <StudentComment studentName={this.state.studentName} />
           </Form>
           {/* When submit is pressed then comment is presented */}
+       
          
         </div>
       </div>
