@@ -3,18 +3,18 @@ import { COMMENTS } from "../comments";
 
 
 
-const StudentComment = (studentName) => {
+const StudentComment = ({ studentName }) => {
 
-  // const findComment = (
-  //   COMMENTS.find((comment) => comment.id > 3)
-  // )
+  const findComment = (
+    COMMENTS.find((comment) => comment.id > 3)
+  )
    
  
   return(
 
    <p>
      
-   {this.props.studentName} 
+   {studentName} {findComment.text}
    
   </p>
   ) 
