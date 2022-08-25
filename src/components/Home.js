@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Card, CardHeader, CardBody } from "reactstrap";
-import StudentComment from "./StudentComment";
 import StudentInfo from "./StudentInfo"
 
 
@@ -34,7 +32,7 @@ function Directions() {
     <div>
       <p>
         This app was created to give teachers a format to help them create
-        comments. The hardest part is starting the commmnets and this tool is
+        comments. The hardest part is starting the comments and this tool is
         meant to help you with your report card comments. It is reccomended to
         flesh these out and add specific detail about sudents. Get started now!
       </p>

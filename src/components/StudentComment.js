@@ -3,22 +3,21 @@ import { COMMENTS } from "../comments";
 
 
 
-const StudentComment = ({ studentName }) => {
+const StudentComment = ({ studentName, gender,level }) => {
 
-  const findComment = (
-    COMMENTS.find((comment) => comment.id > 3)
-  )
+  const studentComment = (
+    COMMENTS.filter((comment) => comment.gender === gender)).filter((comment) => comment.level === level)
+    console.log(studentComment)
    
  
   return(
-
-   <p>
-     
-   {studentName} {findComment.text}
-   
-  </p>
-  ) 
-
+    
+    studentComment.map((comment) => 
+    <p key={comment.id}>
+   {studentName} {comment.text}
+    </p>
+   ) 
+  )
  
 };
 

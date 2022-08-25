@@ -32,6 +32,7 @@ class StudentInfo extends Component {
       gender: " ",
       level: "On Grade Level",
       comments: COMMENTS,
+      studentComment: false
      
     };
     
@@ -52,10 +53,11 @@ class StudentInfo extends Component {
   }
 
   toggleComment(){
-    alert("Loading...")
-    // this.setState({
-    //   comments: this.state.comments.map((comment) => <p key={comment.id}>{comment.text}</p>)
-    // })
+    
+  
+    this.setState({
+      studentComment: !this.state.studentComment
+    })
     
    
   }
@@ -123,20 +125,22 @@ class StudentInfo extends Component {
             <FormGroup row>
               <Col>
                 <Button type="submit" color="success" size="lg" block>
-                  Submit
+                  Generate Comment
                 </Button>
               </Col>
             </FormGroup>
             <FormGroup>
              <Label for="exampleText">
-                 Comments
+                 Comment
              </Label>
               
             </FormGroup>
-            <StudentComment studentName={this.state.studentName} />
+            <StudentComment studentName={this.state.studentName} gender={this.state.gender} level={this.state.level}  /> 
           </Form>
           {/* When submit is pressed then comment is presented */}
-       
+          
+            
+           
          
         </div>
       </div>
