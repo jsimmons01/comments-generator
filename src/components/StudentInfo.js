@@ -7,20 +7,15 @@ import StudentComment from "./StudentComment";
 
 /*************************************************** TO DO**************************************************************************
     *******************************Get the app working to dos******************
-    *create a comment file with boy and girl pronouns seperately
-    *create a component that filters through the array to match gender
-    *create another component that filters through array to match student level
-    *display generated comments in the text box       
-    *change names of components so they make more since     
-    *Actually may not need two components, but a render component that matches the gender with 
-    *with the grade level     
-    *Fix something, insertName is only working when put in the garde level            
+    *create a comment file with comments like intro and subject
+    *chnage size of new student button
+    *create validation for the form
+    * style page      
+         
 ************************************Aspirations*********************************
 
- * eventually have subject based comments
- * style page
  * add comments to a document that teacher can send to themselves
- *
+ 
 
  
  *********************************************************************************************************************************/
@@ -32,12 +27,13 @@ class StudentInfo extends Component {
       gender: " ",
       level: "On Grade Level",
       comments: COMMENTS,
-      studentComment: false
+      showComment: false
      
     };
     
     this.handleInputChange = this.handleInputChange.bind(this);
     this.toggleComment = this.toggleComment.bind(this);
+    this.addNewStudent = this.addNewStudent.bind(this);
     //this.insertName = this.insertName.bind(this);
   }
    
@@ -52,14 +48,30 @@ class StudentInfo extends Component {
     });
   }
 
-  toggleComment(){
+  toggleComment(e){
+    e.preventDefault();
     
+    //Set up validation for inputs 
+    // if(this.state.studentName === ''){
+    //   alert('Please enter a student name')
+    //   return
+    // }
   
     this.setState({
-      studentComment: !this.state.studentComment
+      showComment: !this.state.showComment,
+      
     })
-    
-   
+  
+  }
+
+  addNewStudent(){
+    this.setState({
+      studentName: " ",
+      gender: " ",
+      level: "On Grade Level",
+      showComment: false
+
+    })
   }
 
 
@@ -135,14 +147,19 @@ class StudentInfo extends Component {
              </Label>
               
             </FormGroup>
-            <StudentComment studentName={this.state.studentName} gender={this.state.gender} level={this.state.level}  /> 
+           
           </Form>
+          
           {/* When submit is pressed then comment is presented */}
           
             
-           
+          
          
         </div>
+        {this.state.showComment && <StudentComment studentName={this.state.studentName} gender={this.state.gender} level={this.state.level}  /> 
+        } 
+        
+        {this.state.showComment && <Button onClick={this.addNewStudent} className='newStudentBtn' outline color='primary' size='sm'>New Student</Button>}
       </div>
     );
   }

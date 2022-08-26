@@ -11,12 +11,14 @@ const StudentComment = ({ studentName, gender,level }) => {
    
  
   return(
-    
+  
     studentComment.map((comment) => 
     <p key={comment.id}>
    {studentName} {comment.text}
     </p>
    ) 
+    
+    
   )
  
 };
