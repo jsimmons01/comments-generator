@@ -10,11 +10,15 @@ import StudentComment from "./StudentComment";
     *create a comment file with comments like intro and subject
     *chnage size of new student button
     *create validation for the form
-    * style page      
+    * style page 
+    *      
          
 ************************************Aspirations*********************************
 
  * add comments to a document that teacher can send to themselves
+ *update project with hooks
+ *random comment generate
+
  
 
  
