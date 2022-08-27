@@ -32,9 +32,8 @@ function Directions() {
     <div>
       <p>
         This app was created to give teachers a format to help them create
-        comments. The hardest part is starting the comments and this tool is
-        meant to help you with your report card comments. It is reccomended to
-        flesh these out and add specific detail about sudents. Get started now!
+        report card comments. The purpose of this app is to assist you in doing the hardest part of 
+        writing comments - starting! We recommend you use this to write specific parts of your comments and then add more details. Again these are not complete comments, but just a guide. For the intro, all the comments will generate so choose accordingly. Get started now!
       </p>
     </div>
   );

@@ -1,45 +1,46 @@
 export const COMMENTS = [
   {
     id: 0,
-    level: "Below Grade Level",
+    type: "Behavior",
 
     gender: "boy",
    text:
-      "is performing below grade level. He can improve by completing assignments on time.",
+      "It has been a joy getting to know stuName this quarter. He is a kind and caring student who is always willing to participate and share his wonderful ideas. stuName puts effort into his assignments and tries his best throughout the day.",
   },
   {
-    id: 1,
-    level: "Below Grade Level",
+    id: 0,
+    type: "Behavior",
+
     gender: "girl",
    text:
-      "is performing below grade level. She can improve by completing assignments on time.",
+      "It has been a joy getting to know stuName this quarter. She is a kind and caring student who is always willing to participate and share her wonderful ideas. stuName puts effort into his assignments and tries his best throughout the day.",
   },
   {
     id: 2,
-    level: "On Grade Level",
+    type: "On Grade type",
     gender: "boy",
    text:
-      "is performing on grade level. He can improve by completing assignments on time.",
+      "is performing on grade type. He can improve by completing assignments on time.",
   },
   {
     id: 3,
-    level: "On Grade Level",
+    type: "On Grade type",
     gender: "girl",
    text:
-      "is performing on grade level. She can improve by completing assignments on time.",
+      "is performing on grade type. She can improve by completing assignments on time.",
   },
   {
     id: 4,
-    level: "Above Grade Level",
+    type: "Above Grade type",
     gender: "boy",
    text:
-      "is performing above grade level. He can improve by completing assignments on time.",
+      "is performing above grade type. He can improve by completing assignments on time.",
   },
   {
     id: 5,
-    level: "Above Grade Level",
+    type: "Above Grade type",
     gender: "girl",
    text:
-      "is performing above grade level. She can improve by completing assignments on time.",
+      "is performing above grade type. She can improve by completing assignments on time.",
   },
 ];

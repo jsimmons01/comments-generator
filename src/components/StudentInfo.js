@@ -11,7 +11,8 @@ import StudentComment from "./StudentComment";
     *chnage size of new student button
     *create validation for the form
     * style page 
-    *      
+    * add links
+    * set up two ways to do comments, one to generate all for a section. The other to generate one comment.      
          
 ************************************Aspirations*********************************
 
@@ -29,7 +30,7 @@ class StudentInfo extends Component {
     this.state = {
       studentName: " ",
       gender: " ",
-      level: "On Grade Level",
+      type: "Intro",  
       comments: COMMENTS,
       showComment: false
      
@@ -72,7 +73,7 @@ class StudentInfo extends Component {
     this.setState({
       studentName: " ",
       gender: " ",
-      level: "On Grade Level",
+      type: "Intro",
       showComment: false
 
     })
@@ -120,21 +121,24 @@ class StudentInfo extends Component {
                 <Label check>Girl</Label>
               </Col>
             </FormGroup>
+            
             <FormGroup row>
-              <Label htmlFor="level" md={4}>
-                Level
+              <Label htmlFor="type" md={4}>
+                Type
               </Label>
               <Col md={4}>
                 <Input
                   type="select"
-                  id="level"
-                  name="level"
-                  value={this.state.level}
+                  id="type"
+                  name="type"
+                  value={this.state.type}
                   onChange={this.handleInputChange}
                 >
-                  <option>Below Grade Level</option>
-                  <option>On Grade Level</option>
-                  <option>Above Grade Level</option>
+                  <option>Intro</option>
+                  <option>Behavior (positive)</option>
+                  <option>Behavior (needs improvement)</option>
+                  <option>Closure</option>
+
                 </Input>
               </Col>
             </FormGroup>
@@ -160,7 +164,7 @@ class StudentInfo extends Component {
           
          
         </div>
-        {this.state.showComment && <StudentComment studentName={this.state.studentName} gender={this.state.gender} level={this.state.level}  /> 
+        {this.state.showComment && <StudentComment studentName={this.state.studentName} gender={this.state.gender} type={this.state.type}  /> 
         } 
         
         {this.state.showComment && <Button onClick={this.addNewStudent} className='newStudentBtn' outline color='primary' size='sm'>New Student</Button>}

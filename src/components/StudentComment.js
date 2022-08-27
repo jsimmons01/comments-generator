@@ -3,10 +3,10 @@ import { COMMENTS } from "../comments";
 
 
 
-const StudentComment = ({ studentName, gender,level }) => {
+const StudentComment = ({ studentName, gender,type }) => {
 
   const studentComment = (
-    COMMENTS.filter((comment) => comment.gender === gender)).filter((comment) => comment.level === level)
+    COMMENTS.filter((comment) => comment.gender === gender)).filter((comment) => comment.type === type)
     console.log(studentComment)
    
  
