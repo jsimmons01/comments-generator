@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardBody } from "reactstrap";
 import StudentInfo from "./StudentInfo"
+import Adjectives from "./Adjectives";
 
 
 
@@ -27,7 +28,7 @@ const Home = () => {
         <Card>
           <CardHeader className='text-center' tag='h2'>Adjectives</CardHeader>
           <CardBody>
-            List of Adjectives will go here
+           <Adjectives />
           </CardBody>
         </Card>
 

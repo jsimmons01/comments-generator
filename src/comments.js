@@ -80,14 +80,14 @@ export const COMMENTS = [
     type: "Behavior Problems",
     gender: "boy",
    text:
-   "firstName lastName has great attendance and comes to class on time everyday. He is respectful to teachers and classmates. One area for improvement for firstName is for him to complete assignments on time. He is encouraged to use time wisely to finish task in the time required. Also, he is encouraged to ask for help when needed. I am looking forward to seeing firstName progress next quarter."
+   "firstName lastName has great attendance and comes to class on time everyday. He is respectful to teachers and classmates. One area for improvement for firstName is for him to complete assignments on time. He is encouraged to use time wisely to finish tasks in the time required. Also, he is encouraged to ask for help when needed. I am looking forward to seeing firstName progress next quarter."
   },
   {
     id: 11,
     type: "Behavior Problems",
     gender: "girl",
    text:
-   "firstName lastName has great attendance and comes to class on time everyday. She is respectful to teachers and classmates. One area for improvement for firstName is for her to complete assignments on time. She is encouraged to use time wisely to finish task in the time required. Also, She is encouraged to ask for help when needed. I am looking forward to seeing firstName progress next quarter."
+   "firstName lastName has great attendance and comes to class on time everyday. She is respectful to teachers and classmates. One area for improvement for firstName is for her to complete assignments on time. She is encouraged to use time wisely to finish tasks in the time required. Also, She is encouraged to ask for help when needed. I am looking forward to seeing firstName progress next quarter."
   },
   {
     id: 12,
@@ -108,14 +108,14 @@ export const COMMENTS = [
     type: "Behavior Problems",
     gender: "boy",
    text:
-   "firstName lastName comes to class on time everyday. He is hardworking and self-confident. He is learning how to follow the classroom rules and procedures. One area for improvement is for firstname to treat others with respect. I am looking forward to seeing him progress next quarter."
+   "firstName lastName comes to class on time every day. He is hard-working and self-confident. He is learning how to follow the classroom rules and procedures. One area for improvement is for firstname to treat others with respect. I am looking forward to seeing him progress next quarter."
   },
   {
     id: 15,
     type: "Behavior Problems",
     gender: "girl",
    text:
-   "firstName lastName comes to class on time everyday. She is hardworking and self-confident. She is learning how to follow the classroom rules and procedures. One area for improvement is for firstname to treat others with respect. I am looking forward to seeing her progress next quarter."
+   "firstName lastName comes to class on time every day. She is hard-working and self-confident. She is learning how to follow the classroom rules and procedures. One area for improvement is for firstname to treat others with respect. I am looking forward to seeing her progress next quarter."
   },
 
 ];

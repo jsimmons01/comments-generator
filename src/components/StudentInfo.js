@@ -14,7 +14,7 @@ import StudentComment from "./StudentComment";
     * add helpful links, maybe an about page
     * add a read me file
     * fix the radio buttons
-    * add list of adjectives
+    * put directions in an accodion
          
          
 ************************************Aspirations*********************************
