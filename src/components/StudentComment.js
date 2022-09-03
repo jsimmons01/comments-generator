@@ -3,10 +3,14 @@ import { COMMENTS } from "../comments";
 
 
 
-const StudentComment = ({ studentName, gender,type }) => {
+const StudentComment = ({ firstName, lastName, gender,type }) => {
+
+  
 
   const studentComment = (
-    COMMENTS.filter((comment) => comment.gender === gender)).filter((comment) => comment.type === type)
+   COMMENTS.filter((comment) => comment.gender === gender)).filter((comment) => comment.type === type);
+    
+   
     console.log(studentComment)
    
  
@@ -14,11 +18,10 @@ const StudentComment = ({ studentName, gender,type }) => {
   
     studentComment.map((comment) => 
     <p key={comment.id}>
-   {studentName} {comment.text}
+    {comment.text.replace(/firstName/g, firstName).replace(/lastName/, lastName)}
+    
     </p>
-   ) 
-    
-    
+   )  
   )
  
 };

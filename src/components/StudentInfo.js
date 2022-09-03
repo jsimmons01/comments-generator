@@ -7,18 +7,22 @@ import StudentComment from "./StudentComment";
 
 /*************************************************** TO DO**************************************************************************
     *******************************Get the app working to dos******************
-    *create a comment file with comments like intro and subject
+    *create a comment file with different types of comments
     *chnage size of new student button
     *create validation for the form
     * style page 
-    * add links
-    * set up two ways to do comments, one to generate all for a section. The other to generate one comment.      
+    * add helpful links, maybe an about page
+    * add a read me file
+    * fix the radio buttons
+    * add list of adjectives
+         
          
 ************************************Aspirations*********************************
 
  * add comments to a document that teacher can send to themselves
  *update project with hooks
  *random comment generate
+
 
  
 
@@ -28,9 +32,10 @@ class StudentInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      studentName: " ",
+      firstName: " ",
+      lastName: " ",
       gender: " ",
-      type: "Intro",  
+      type: "Average Performer",  
       comments: COMMENTS,
       showComment: false
      
@@ -71,9 +76,10 @@ class StudentInfo extends Component {
 
   addNewStudent(){
     this.setState({
-      studentName: " ",
+      firstName: " ",
+      lastName: " ",
       gender: " ",
-      type: "Intro",
+      type: "Average Performer",
       showComment: false
 
     })
@@ -86,21 +92,39 @@ class StudentInfo extends Component {
         <div className="col-md">
           <Form onSubmit={this.toggleComment} >
             <FormGroup row>
-              <Label htmlFor="studentName" md={4}>
-                Student's Name:
+              <Label htmlFor="firstName" md={4}>
+                Student's first name:
               </Label>
-              <Col md={4}>
+              <Col>
                 <Input
                   type="text"
-                  id="studentName"
-                  name="studentName"
-                  placeholder="Student Name"
-                  value={this.state.studentName}
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                  value={this.state.firstName}
                   onChange={this.handleInputChange}
                 />
               </Col>
+            </FormGroup>
+            <FormGroup row>
+              <Label htmlFor="lastName" md={4}>
+                Student's last name:
+              </Label>
               <Col>
                 <Input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                  value={this.state.lastName}
+                  onChange={this.handleInputChange}
+                />
+              </Col>                
+            </FormGroup>
+            
+            <FormGroup row>
+            <Col>
+            <Input
                   type="radio"
                   name="gender"
                   value="boy"
@@ -108,25 +132,24 @@ class StudentInfo extends Component {
                   onChange={this.handleInputChange}
                 />
                 <Label check>Boy</Label>
-              </Col>
-
+            </Col>
+               
               <Col>
-                <Input
+              <Input
                   type="radio"
                   name="gender"
                   value="girl"
                   checked={this.state.gender === "girl"}
                   onChange={this.handleInputChange}
                 />
-                <Label check>Girl</Label>
-              </Col>
-            </FormGroup>
-            
-            <FormGroup row>
+              <Label check>Girl</Label>
+              </Col>       
+              </FormGroup>
+              <FormGroup row>
               <Label htmlFor="type" md={4}>
-                Type
+                Comment Type:
               </Label>
-              <Col md={4}>
+              <Col>
                 <Input
                   type="select"
                   id="type"
@@ -134,10 +157,10 @@ class StudentInfo extends Component {
                   value={this.state.type}
                   onChange={this.handleInputChange}
                 >
-                  <option>Intro</option>
-                  <option>Behavior (positive)</option>
-                  <option>Behavior (needs improvement)</option>
-                  <option>Closure</option>
+                  <option>High Performer</option>
+                  <option>Average Performer</option>
+                  <option>Below Average Performer</option>
+                  <option>Behavior Problems</option>
 
                 </Input>
               </Col>
@@ -145,15 +168,9 @@ class StudentInfo extends Component {
             <FormGroup row>
               <Col>
                 <Button type="submit" color="success" size="lg" block>
-                  Generate Comment
+                  Generate Comments
                 </Button>
               </Col>
-            </FormGroup>
-            <FormGroup>
-             <Label for="exampleText">
-                 Comment
-             </Label>
-              
             </FormGroup>
            
           </Form>
@@ -164,7 +181,7 @@ class StudentInfo extends Component {
           
          
         </div>
-        {this.state.showComment && <StudentComment studentName={this.state.studentName} gender={this.state.gender} type={this.state.type}  /> 
+        {this.state.showComment && <StudentComment firstName={this.state.firstName} lastName={this.state.lastName} gender={this.state.gender} type={this.state.type}  /> 
         } 
         
         {this.state.showComment && <Button onClick={this.addNewStudent} className='newStudentBtn' outline color='primary' size='sm'>New Student</Button>}
