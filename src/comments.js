@@ -5,7 +5,7 @@ export const COMMENTS = [
 
     gender: "boy",
    text:
-      "It has been a joy getting to know stuName this quarter. He is a kind and caring student who is always willing to participate and share his wonderful ideas. stuName puts effort into his assignments and tries his best throughout the day.",
+      "firstName lastName is an enthusiastic learner who seems to enjoy school. He takes responsibility for his learning and strives to reach his full potential. He has mastered the concepts and skills in all subject areas for this quarter. I encourage firstName to continue to put his best foot forward. ",
   },
   {
     id: 1,
@@ -13,35 +13,35 @@ export const COMMENTS = [
 
     gender: "girl",
    text:
-      "It has been a joy getting to know stuName this quarter. She is a kind and caring student who is always willing to participate and share her wonderful ideas. stuName puts effort into his assignments and tries his best throughout the day.",
+      "firstName lastName is an enthusiastic learner who seems to enjoy school. She takes responsibility for her learning and strives to reach her full potential. She has mastered the concepts and skills in all subject areas for this quarter. I encourage firstName to continue to put her best foot forward. ",
   },
   {
     id: 2,
-    type: "Average Performer",
+    type: "High Perfomer",
     gender: "boy",
    text:
-      "stuName is performing on grade type. He can improve by completing assignments on time.",
+      "firstName lastName is a model student. He exhibits a positive outlook and attitude in the classroom. He tackles classroom assignments, tasks, and group work in an organized manner. He listens attentively to responses of others while also taking an active role in classroom discussion. His enthusiasm for learning has contributed to his outstanding performance in all subject areas. I encourage firstName to keep up the great work.",
   },
   {
     id: 3,
-    type: "Average Performer",
+    type: "High Performer",
     gender: "girl",
    text:
-      "stuName is performing on grade type. She can improve by completing assignments on time.",
+      "firstName lastName is a model student. She exhibits a positive outlook and attitude in the classroom. She tackles classroom assignments, tasks, and group work in an organized manner. She listens attentively to responses of others while also taking an active role in classroom discussion. Her enthusiasm for learning has contributed to her outstanding performance in all subject areas. I encourage firstName to keep up the great work.",
   },
   {
     id: 4,
-    type: "Below Average Performer",
+    type: "High Performer",
     gender: "boy",
    text:
-      "stuName is performing above grade type. He can improve by completing assignments on time.",
+      "firstName lastName is able to cooperate and work well with any student in the classroom. He is very hardworking and completes all assignments in a timely manner. He expresses ideas clearly, both verbally and through writing. He has demonstrated that he has an excellent understanding of concepts taught this quarter. I encourage firstName to continue to be a shining star.",
   },
   {
     id: 5,
-    type: "Below Average Performer",
+    type: "High Performer",
     gender: "girl",
    text:
-      "stuName is performing above grade type. She can improve by completing assignments on time.",
+      "firstName lastName is able to cooperate and work well with any student in the classroom. She is very hardworking and completes all assignments in a timely manner. She expresses ideas clearly, both verbally and through writing. She has demonstrated that she has an excellent understanding of concepts taught this quarter. I encourage firstName to continue to be a shining star.",
   },
   {
     id: 6,
