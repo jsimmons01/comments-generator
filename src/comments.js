@@ -5,7 +5,7 @@ export const COMMENTS = [
 
     gender: "boy",
    text:
-      "firstName lastName is an enthusiastic learner who seems to enjoy school. He takes responsibility for his learning and strives to reach his full potential. He has mastered the concepts and skills in all subject areas for this quarter. I encourage firstName to continue to put his best foot forward. ",
+      "firstName lastName is an enthusiastic learner who seems to enjoy school. He takes responsibility for his learning and strives to reach his full potential. He has exceeded expectations with the quality of his work. I encourage firstName to continue to put his best foot forward.",
   },
   {
     id: 1,
@@ -13,7 +13,7 @@ export const COMMENTS = [
 
     gender: "girl",
    text:
-      "firstName lastName is an enthusiastic learner who seems to enjoy school. She takes responsibility for her learning and strives to reach her full potential. She has mastered the concepts and skills in all subject areas for this quarter. I encourage firstName to continue to put her best foot forward. ",
+      "firstName lastName is an enthusiastic learner who seems to enjoy school. She takes responsibility for her learning and strives to reach her full potential. She exceeds expectations with the quality of her work. I encourage firstName to continue to put her best foot forward.",
   },
   {
     id: 2,
@@ -130,6 +130,34 @@ export const COMMENTS = [
     gender: "girl",
    text:
    "firstName lastName exhibits a positive outlook and attitude in the classroom. She is thoughtful and kind in her interactions with others. She is well prepared for class each day. She has demonstrated that she has a good understanding of the concepts and skills taught this quarter. She has made decent progress in all subject areas."
+  },
+  {
+    id: 18,
+    type: "Average Perfomer",
+    gender: "boy",
+   text:
+   "firstName lastName demonstrates responsibility daily by caring for the materials in our classroom. He is exceptionally organized and takes care of his things. He remains an active learner throughout the school day. Overall, he has done a good job this quarter."
+  },
+  {
+    id: 19,
+    type: "Average Perfomer",
+    gender: "girl",
+   text:
+   "firstName lastName demonstrates responsibility daily by caring for the materials in our classroom. She is exceptionally organized and takes care of her things. She remains an active learner throughout the school day. Overall, She has done a good job this quarter."
+  },
+  {
+    id: 20,
+    type: "Average Perfomer",
+    gender: "boy",
+   text:
+   "firstName lastName sets an example of excellence in behavior and cooperation. He takes his classroom job seriously and demonstrates responsibility when completing it. He checks his work thoroughly before submitting it. He has strengthened his skills in all subject areas this quarter."
+  },
+  {
+    id: 21,
+    type: "Average Perfomer",
+    gender: "girl",
+   text:
+   "firstName lastName sets an example of excellence in behavior and cooperation. She takes her classroom job seriously and demonstrates responsibility when completing it. She checks her work thoroughly before submitting it. She has strengthened her skills in all subject areas this quarter."
   },
 
 ];
