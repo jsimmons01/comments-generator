@@ -117,5 +117,19 @@ export const COMMENTS = [
    text:
    "firstName lastName comes to class on time every day. She is hard-working and self-confident. She is learning how to follow the classroom rules and procedures. One area for improvement is for firstname to treat others with respect. I am looking forward to seeing her progress next quarter."
   },
+  {
+    id: 16,
+    type: "Average Permorfer",
+    gender: "boy",
+   text:
+   "firstName lastName exhibits a positive outlook and attitude in the classroom. He is thoughtful and kind in his interactions with others. He is well prepared for class each day. He has demonstrated that he has a good understanding of the concepts and skills taught this quarter. He has made decent progress in all subject areas."
+  },
+  {
+    id: 17,
+    type: "Average Perfomer",
+    gender: "girl",
+   text:
+   "firstName lastName exhibits a positive outlook and attitude in the classroom. She is thoughtful and kind in her interactions with others. She is well prepared for class each day. She has demonstrated that she has a good understanding of the concepts and skills taught this quarter. She has made decent progress in all subject areas."
+  },
 
 ];

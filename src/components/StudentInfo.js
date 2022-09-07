@@ -14,6 +14,8 @@ import StudentComment from "./StudentComment";
     * add helpful links, maybe an about page
     * add a read me file
     * fix the radio buttons
+    * add a build your comment component
+    * will need an array of comments based on behavior, personality, etc. 
 
          
          
