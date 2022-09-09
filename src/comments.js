@@ -193,7 +193,8 @@ export const COMMENTS = [
     gender: "boy",
    text:
    "firstName lastName shows empathy towards his peers. He takes time to think before he speaks. However, he has a hard time working independently and completing assignments which is reflected in his grades. He can benefit from completing assignments on time and listening carefully during instruction."
-  {
+  },
+   {
     id: 27,
     type: "Below Average Perfomer",
     gender: "girl",
