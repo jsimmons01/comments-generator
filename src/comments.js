@@ -159,5 +159,46 @@ export const COMMENTS = [
    text:
    "firstName lastName sets an example of excellence in behavior and cooperation. She takes her classroom job seriously and demonstrates responsibility when completing it. She checks her work thoroughly before submitting it. She has strengthened her skills in all subject areas this quarter."
   },
+  {
+    id: 22,
+    type: "Below Average Perfomer",
+    gender: "boy",
+   text:
+   "firstName lastName is well liked by classmates. He is caring and concerned with the feelings of his  peers. Although he is a great friend, he works fast and makes careless mistakes on assignments. He would greatly benefit from slowing down and checking his assignments."
+  },
+  {
+    id: 23,
+    type: "Below Average Perfomer",
+    gender: "girl",
+   text:
+   "firstName lastName is well liked by classmates. She is caring and concerned with the feelings of her peers. Although she is a great friend, she  works fast and makes careless mistakes on assignments. She would greatly benefit from slowing down and checking her assignments."
+  },
+  {
+    id: 24,
+    type: "Below Average Perfomer",
+    gender: "boy",
+   text:
+   "firstName lastName arrives on time to school every day and is always well prepared for class. He has a great sense of humor and loves to make jokes and play. One area  he can improve is managing his time effectively. He is encouraged to make good use of his time by understanding that there is a time to study and a time to play."
+  },
+  {
+    id: 25,
+    type: "Below Average Perfomer",
+    gender: "girl",
+   text:
+   "firstName lastName arrives on time to school every day and is always well prepared for class. She has a great sense of humor and loves to make jokes and play. One area she can improve is managing her time effectively. She is encouraged to make good use of her time by understanding that there is a time to study and a time to play."
+  },
+  {
+    id: 26,
+    type: "Below Average Perfomer",
+    gender: "boy",
+   text:
+   "firstName lastName shows empathy towards his peers. He takes time to think before he speaks. However, he has a hard time working independently and completing assignments which is reflected in his grades. He can benefit from completing assignments on time and listening carefully during instruction."
+  {
+    id: 27,
+    type: "Below Average Perfomer",
+    gender: "girl",
+   text:
+   "firstName lastName shows empathy towards her peers. She takes time to think before she speaks. She  has a hard time working independently and completing assignments which is reflected in her grades. She can benefit from completing assignments on time and listening carefully during instruction."
+  },
 
 ];
