@@ -1,26 +1,33 @@
-import { Nav, NavItem, NavLink } from 'reactstrap'
+import { Navbar, Nav, NavItem, NavLink } from 'reactstrap'
+import { Link } from 'react-router-dom'
+
+
 
 
 const Header = () => {
 
   return (
-    <div>
+   <div>
+       <Navbar expand="lg" className='nav-bar'>
+       
+       <Nav className='me-auto'>
+          <NavItem> <Link to="/"><NavLink active >Home</NavLink></Link> </NavItem>
+          <NavItem><Link to='/commentBuilder'><NavLink>Comment Builder</NavLink></Link></NavItem>
+          <NavItem> <Link to='/resources'><NavLink  >Resources</NavLink></Link></NavItem>
+            
+             
+            
+          
+       </Nav>
+     
+      
+       </Navbar>   
+   </div>
+     
        
         
-        <Nav className='my-3 nav-bar'fill tabs>
-            <NavItem>
-              <NavLink active className="nav-link" href="#">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink  className="nav-link" href="./components/CommentBuilder">Comment Builder</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink  className="nav-link" href="#">Resources</NavLink>
-            </NavItem>
-        </Nav>
-        
    
-    </div>
+   
     
   )
 }

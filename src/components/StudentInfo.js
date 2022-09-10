@@ -8,10 +8,10 @@ import StudentComment from "./StudentComment";
 /*************************************************** TO DO**************************************************************************
   
     * style page (  large screen inpu length)
-    * add helpful links, maybe an about page
     * add a read me file
     * add a build your comment component
-    * will need an array of comments based on behavior, personality, etc.        
+    * will need an array of comments based on behavior, personality, etc.  
+    * resources page      
 ************************************Aspirations*********************************
 
  * add comments to a document that teacher can send to themselves

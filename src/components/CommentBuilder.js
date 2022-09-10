@@ -2,7 +2,7 @@
 
 const CommentBuilder = () => {
   return (
-    <div>CommentBuilder</div>
+    <div><h1>CommentBuilder</h1></div>
   )
 }
 

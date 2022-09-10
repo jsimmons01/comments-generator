@@ -13,10 +13,19 @@ code {
     monospace;
 }
 
-.nav-link{
-  color:black;
+a {
+  text-decoration: none;
 }
 
+
+.nav-bar{
+ text-align: center;
+ color: yellow;
+}
 .card-body {
   background-color: snow;
 }
+/* a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+} */

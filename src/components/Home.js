@@ -1,18 +1,12 @@
 import { Card, CardHeader, CardBody } from "reactstrap";
 import StudentInfo from "./StudentInfo"
 import Adjectives from "./Adjectives";
-import Footer from "./Footer"
-import Header from "./Header"
-import CommentBuilder from "./CommentBuilder";
-
 
 
 const Home = () => {
    
     return (
-      <div className="container">
-        <Header />
-        
+      <div className="container">  
         <Card className='my-5'>
           <CardHeader className='text-center' tag='h1'>
           Teacher Comment Generator
@@ -33,9 +27,7 @@ const Home = () => {
           <CardBody className="card-body">
            <Adjectives />
           </CardBody>
-        </Card>
-        <Footer />
-       
+        </Card>   
       </div>
     );
   }
