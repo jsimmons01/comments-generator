@@ -17,7 +17,7 @@ export const COMMENTS = [
   },
   {
     id: 2,
-    type: "High Perfomer",
+    type: "High Performer",
     gender: "boy",
    text:
       "firstName lastName is a model student. He exhibits a positive outlook and attitude in the classroom. He tackles classroom assignments, tasks, and group work in an organized manner. He listens attentively to responses of others while also taking an active role in classroom discussion. His enthusiasm for learning has contributed to his outstanding performance in all subject areas. I encourage firstName to keep up the great work.",
@@ -119,84 +119,84 @@ export const COMMENTS = [
   },
   {
     id: 16,
-    type: "Average Permorfer",
+    type: "Average Performer",
     gender: "boy",
    text:
    "firstName lastName exhibits a positive outlook and attitude in the classroom. He is thoughtful and kind in his interactions with others. He is well prepared for class each day. He has demonstrated that he has a good understanding of the concepts and skills taught this quarter. He has made decent progress in all subject areas."
   },
   {
     id: 17,
-    type: "Average Perfomer",
+    type: "Average Performer",
     gender: "girl",
    text:
    "firstName lastName exhibits a positive outlook and attitude in the classroom. She is thoughtful and kind in her interactions with others. She is well prepared for class each day. She has demonstrated that she has a good understanding of the concepts and skills taught this quarter. She has made decent progress in all subject areas."
   },
   {
     id: 18,
-    type: "Average Perfomer",
+    type: "Average Performer",
     gender: "boy",
    text:
    "firstName lastName demonstrates responsibility daily by caring for the materials in our classroom. He is exceptionally organized and takes care of his things. He remains an active learner throughout the school day. Overall, he has done a good job this quarter."
   },
   {
     id: 19,
-    type: "Average Perfomer",
+    type: "Average Performer",
     gender: "girl",
    text:
    "firstName lastName demonstrates responsibility daily by caring for the materials in our classroom. She is exceptionally organized and takes care of her things. She remains an active learner throughout the school day. Overall, She has done a good job this quarter."
   },
   {
     id: 20,
-    type: "Average Perfomer",
+    type: "Average Performer",
     gender: "boy",
    text:
    "firstName lastName sets an example of excellence in behavior and cooperation. He takes his classroom job seriously and demonstrates responsibility when completing it. He checks his work thoroughly before submitting it. He has strengthened his skills in all subject areas this quarter."
   },
   {
     id: 21,
-    type: "Average Perfomer",
+    type: "Average Performer",
     gender: "girl",
    text:
    "firstName lastName sets an example of excellence in behavior and cooperation. She takes her classroom job seriously and demonstrates responsibility when completing it. She checks her work thoroughly before submitting it. She has strengthened her skills in all subject areas this quarter."
   },
   {
     id: 22,
-    type: "Below Average Perfomer",
+    type: "Below Average Performer",
     gender: "boy",
    text:
    "firstName lastName is well liked by classmates. He is caring and concerned with the feelings of his  peers. Although he is a great friend, he works fast and makes careless mistakes on assignments. He would greatly benefit from slowing down and checking his assignments."
   },
   {
     id: 23,
-    type: "Below Average Perfomer",
+    type: "Below Average Performer",
     gender: "girl",
    text:
    "firstName lastName is well liked by classmates. She is caring and concerned with the feelings of her peers. Although she is a great friend, she  works fast and makes careless mistakes on assignments. She would greatly benefit from slowing down and checking her assignments."
   },
   {
     id: 24,
-    type: "Below Average Perfomer",
+    type: "Below Average Performer",
     gender: "boy",
    text:
    "firstName lastName arrives on time to school every day and is always well prepared for class. He has a great sense of humor and loves to make jokes and play. One area  he can improve is managing his time effectively. He is encouraged to make good use of his time by understanding that there is a time to study and a time to play."
   },
   {
     id: 25,
-    type: "Below Average Perfomer",
+    type: "Below Average Performer",
     gender: "girl",
    text:
    "firstName lastName arrives on time to school every day and is always well prepared for class. She has a great sense of humor and loves to make jokes and play. One area she can improve is managing her time effectively. She is encouraged to make good use of her time by understanding that there is a time to study and a time to play."
   },
   {
     id: 26,
-    type: "Below Average Perfomer",
+    type: "Below Average Performer",
     gender: "boy",
    text:
    "firstName lastName shows empathy towards his peers. He takes time to think before he speaks. However, he has a hard time working independently and completing assignments which is reflected in his grades. He can benefit from completing assignments on time and listening carefully during instruction."
   },
    {
     id: 27,
-    type: "Below Average Perfomer",
+    type: "Below Average Performer",
     gender: "girl",
    text:
    "firstName lastName shows empathy towards her peers. She takes time to think before she speaks. She  has a hard time working independently and completing assignments which is reflected in her grades. She can benefit from completing assignments on time and listening carefully during instruction."

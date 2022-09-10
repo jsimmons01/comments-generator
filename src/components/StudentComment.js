@@ -17,7 +17,7 @@ const StudentComment = ({ firstName, lastName, gender,type }) => {
   return(
   
     studentComment.map((comment) => 
-    <p key={comment.id}>
+    <p className="mx-4 my-3" key={comment.id}>
     {comment.text.replace(/firstName/g, firstName).replace(/lastName/, lastName)}
     
     </p>

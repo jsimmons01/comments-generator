@@ -6,19 +6,12 @@ import StudentComment from "./StudentComment";
 
 
 /*************************************************** TO DO**************************************************************************
-    *******************************Get the app working to dos******************
-    *create a comment file with different types of comments
-    *chnage size of new student button
-    *create validation for the form
-    * style page 
+  
+    * style page (  large screen inpu length)
     * add helpful links, maybe an about page
     * add a read me file
-    * fix the radio buttons
     * add a build your comment component
-    * will need an array of comments based on behavior, personality, etc. 
-
-         
-         
+    * will need an array of comments based on behavior, personality, etc.        
 ************************************Aspirations*********************************
 
  * add comments to a document that teacher can send to themselves
@@ -99,12 +92,13 @@ class StudentInfo extends Component {
               </Label>
               <Col>
                 <Input
+                  
                   type="text"
                   id="firstName"
                   name="firstName"
-                  placeholder="First Name"
                   value={this.state.firstName}
                   onChange={this.handleInputChange}
+                  placeholder="Timothy"
                 />
               </Col>
             </FormGroup>
@@ -114,35 +108,42 @@ class StudentInfo extends Component {
               </Label>
               <Col>
                 <Input
-                  type="text"
+                  type='text'
                   id="lastName"
                   name="lastName"
-                  placeholder="Last Name"
+                  placeholder="Anderson"
                   value={this.state.lastName}
                   onChange={this.handleInputChange}
+                  required
                 />
               </Col>                
             </FormGroup>
             
             <FormGroup row>
+              <Label htmlFor="gender" md={4}>Gender:</Label>
             <Col>
             <Input
+                  className='mx-2'
                   type="radio"
                   name="gender"
                   value="boy"
                   checked={this.state.gender === "boy"}
                   onChange={this.handleInputChange}
+                  required
                 />
                 <Label check>Boy</Label>
             </Col>
                
               <Col>
               <Input
+
+                  className='mx-2'
                   type="radio"
                   name="gender"
                   value="girl"
                   checked={this.state.gender === "girl"}
                   onChange={this.handleInputChange}
+                  required
                 />
               <Label check>Girl</Label>
               </Col>       
@@ -169,27 +170,22 @@ class StudentInfo extends Component {
             </FormGroup>
             <FormGroup row>
               <Col>
-                <Button type="submit" color="success" size="lg" block>
-                  Generate Comments
+                <Button type="submit"  color={this.state.showComment ? 'outline info' : 'success'} size="lg" block>
+                 {this.state.showComment ? 'New Student' : 'Generate Comments'} 
                 </Button>
               </Col>
             </FormGroup>
            
           </Form>
-          
-          {/* When submit is pressed then comment is presented */}
-          
-            
-          
          
         </div>
         {this.state.showComment && <StudentComment firstName={this.state.firstName} lastName={this.state.lastName} gender={this.state.gender} type={this.state.type}  /> 
         } 
-        
-        {this.state.showComment && <Button onClick={this.addNewStudent} className='newStudentBtn' outline color='primary' size='sm'>New Student</Button>}
       </div>
     );
   }
 }
+
+
 
 export default StudentInfo;
