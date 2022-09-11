@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container">  
         <Card className='my-5'>
           <CardHeader className='text-center' tag='h1'>
-          Teacher Comment Generator
+           Comment Generator
           </CardHeader>
           <Card>
           <CardBody className='card-body'>

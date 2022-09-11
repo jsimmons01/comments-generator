@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
+import { Button, Form, FormGroup, Label, Input, Col,Row } from "reactstrap";
 import { COMMENTS } from "../comments";
 import StudentComment from "./StudentComment";
 
@@ -7,7 +7,14 @@ import StudentComment from "./StudentComment";
 
 /*************************************************** TO DO**************************************************************************
   
-    * style page (  large screen inpu length)
+    * style page
+       -center navlinks
+       -change navlink color to black
+       -change active background
+       -change navbar background color
+       -change generate comment button color
+       -change new student button color
+       -finish fixing student info form (align the labels, )
     * add a read me file
     * add a build your comment component
     * will need an array of comments based on behavior, personality, etc.  
@@ -84,103 +91,115 @@ class StudentInfo extends Component {
   render() {
     return (
       <div className="row row-content">
-        <div className="col-md">
+      
           <Form onSubmit={this.toggleComment} >
-            <FormGroup row>
-              <Label htmlFor="firstName" md={4}>
-                Student's first name:
-              </Label>
-              <Col>
-                <Input
-                  
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  value={this.state.firstName}
-                  onChange={this.handleInputChange}
-                  placeholder="Timothy"
-                />
+            <Row>
+              <Col md={6}>
+                <FormGroup>
+                  <Label htmlFor="firstName">
+                    Student's First Name:
+                  </Label>
+                
+                    <Input
+                      
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={this.state.firstName}
+                      onChange={this.handleInputChange}
+                      placeholder="Timothy"
+                    />             
+                </FormGroup>
               </Col>
-            </FormGroup>
-            <FormGroup row>
-              <Label htmlFor="lastName" md={4}>
-                Student's last name:
-              </Label>
-              <Col>
-                <Input
-                  type='text'
-                  id="lastName"
-                  name="lastName"
-                  placeholder="Anderson"
-                  value={this.state.lastName}
-                  onChange={this.handleInputChange}
-                  required
-                />
-              </Col>                
-            </FormGroup>
-            
-            <FormGroup row>
-              <Label htmlFor="gender" md={4}>Gender:</Label>
-            <Col>
-            <Input
-                  className='mx-2'
-                  type="radio"
-                  name="gender"
-                  value="boy"
-                  checked={this.state.gender === "boy"}
-                  onChange={this.handleInputChange}
-                  required
-                />
-                <Label check>Boy</Label>
-            </Col>
-               
-              <Col>
-              <Input
+              <Col md={6}>
+                <FormGroup>
+                  <Label htmlFor="lastName">
+                    Student's Last Name:
+                  </Label>          
+                    <Input
+                      type='text'
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Anderson"
+                      value={this.state.lastName}
+                      onChange={this.handleInputChange}
+                      required
+                    />                            
+                </FormGroup>           
+              </Col>
+            </Row>
+            <Row>
+              <FormGroup>
+                <Label htmlFor="type">
+                  Comment Type:
+                </Label>
+                <Col>
+                  <Input
+                    type="select"
+                    id="type"
+                    name="type"
+                    value={this.state.type}
+                    onChange={this.handleInputChange}
+                  >
+                    <option>High Performer</option>
+                    <option>Average Performer</option>
+                    <option>Below Average Performer</option>
+                    <option>Behavior Problems</option>
 
-                  className='mx-2'
-                  type="radio"
-                  name="gender"
-                  value="girl"
-                  checked={this.state.gender === "girl"}
-                  onChange={this.handleInputChange}
-                  required
-                />
-              <Label check>Girl</Label>
-              </Col>       
+                  </Input>
+                </Col>
               </FormGroup>
-              <FormGroup row>
-              <Label htmlFor="type" md={4}>
-                Comment Type:
-              </Label>
-              <Col>
-                <Input
-                  type="select"
-                  id="type"
-                  name="type"
-                  value={this.state.type}
-                  onChange={this.handleInputChange}
-                >
-                  <option>High Performer</option>
-                  <option>Average Performer</option>
-                  <option>Below Average Performer</option>
-                  <option>Behavior Problems</option>
+            </Row>
+            <Row>
+              <FormGroup>
+                <legend className="col-form-label col-sm-2" htmlFor="gender" md={4}>Gender:</legend>
+                <Col>
+                  <FormGroup>
+                    <Input
+                        className='mx-2'
+                        type="radio"
+                        name="gender"
+                        value="boy"
+                        checked={this.state.gender === "boy"}
+                        onChange={this.handleInputChange}
+                        required
+                            />
+                    <Label check>Boy</Label>
+                  </FormGroup>
+                </Col>
+                <Col>
+                  <FormGroup>
+                    <Input
 
-                </Input>
-              </Col>
-            </FormGroup>
-            <FormGroup row>
+                      className='mx-2'
+                      type="radio"
+                      name="gender"
+                      value="girl"
+                      checked={this.state.gender === "girl"}
+                      onChange={this.handleInputChange}
+                      required
+                    />
+                    <Label check>Girl</Label>
+                  </FormGroup>                
+                </Col>
+              </FormGroup>             
+            </Row>
+            <FormGroup>
               <Col>
-                <Button type="submit"  color={this.state.showComment ? 'outline info' : 'success'} size="lg" block>
+                <Button type="submit" color={this.state.showComment ? 'info' : 'success'} size="lg" block>
                  {this.state.showComment ? 'New Student' : 'Generate Comments'} 
                 </Button>
               </Col>
-            </FormGroup>
-           
+            </FormGroup>         
           </Form>
-         
-        </div>
-        {this.state.showComment && <StudentComment firstName={this.state.firstName} lastName={this.state.lastName} gender={this.state.gender} type={this.state.type}  /> 
+         <Row>
+          <Col>
+          {this.state.showComment && <StudentComment firstName={this.state.firstName} lastName={this.state.lastName} gender={this.state.gender} type={this.state.type}  /> 
         } 
+          </Col>
+         </Row>
+    
+        
       </div>
     );
   }

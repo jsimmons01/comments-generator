@@ -1,5 +1,6 @@
-import { Navbar, Nav, NavItem, NavLink } from 'reactstrap'
-import { Link } from 'react-router-dom'
+import { Navbar, Nav, NavItem } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
+import "../App.css"
 
 
 
@@ -7,17 +8,13 @@ import { Link } from 'react-router-dom'
 const Header = () => {
 
   return (
-   <div>
-       <Navbar expand="lg" className='nav-bar'>
+   <div className="container">
+       <Navbar light color='light' expand="md" className='nav-bar my-3'>
        
-       <Nav className='me-auto'>
-          <NavItem> <Link to="/"><NavLink active >Home</NavLink></Link> </NavItem>
-          <NavItem><Link to='/commentBuilder'><NavLink>Comment Builder</NavLink></Link></NavItem>
-          <NavItem> <Link to='/resources'><NavLink  >Resources</NavLink></Link></NavItem>
-            
-             
-            
-          
+       <Nav fill>
+          <NavItem> <NavLink className='nav-link' to="/" active >Home</NavLink></NavItem>
+          <NavItem><NavLink className='nav-link' to='/commentBuilder'>Comment Builder</NavLink></NavItem>
+          <NavItem><NavLink className='nav-link' to='/resources'>Resources</NavLink></NavItem>    
        </Nav>
      
       
