@@ -13,7 +13,7 @@ const Header = () => {
        
        <Nav fill>
           <NavItem> <NavLink className='nav-link' to="/" active >Home</NavLink></NavItem>
-          <NavItem><NavLink className='nav-link' to='/commentBuilder'>Comment Builder</NavLink></NavItem>
+          <NavItem><NavLink className='nav-link' to='/builder'>Builder</NavLink></NavItem>
           <NavItem><NavLink className='nav-link' to='/resources'>Resources</NavLink></NavItem>    
        </Nav>
      
