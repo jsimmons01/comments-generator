@@ -5,15 +5,16 @@ import { BUILDERCOMMENTS } from '../builderComments';
 
 const Builder = () => {
   /**************************
-   * complete comments array
-   * think about if I really need a toggler
    * add directions
+   * make the card smaller for both generator and builder
+   
+   * fix radio button on reset defaults to the opposite of previously chosen button
    */
 
   const comments = BUILDERCOMMENTS;
   const [firstName, setFirstName] =  useState('');
   const [lastName, setLastName] = useState('');
-  const [gender, setGender] = useState('Boy');
+  const [gender, setGender] = useState(' ');
   const [intro, setIntro ] = useState('');
   const [character, setCharacter ] = useState('');
   const [time, setTime ] = useState('');
@@ -22,14 +23,30 @@ const Builder = () => {
   const [math, setMath ] = useState('');
   const [writing, setWriting ] = useState('');
   const [closure, setClosure ] = useState('');
+  const [showComment, setShowComment] = useState(false);
 
 
   
   const toggleComment = (e) => {
 
     e.preventDefault();
-    
+    setShowComment(!showComment)
+  }
 
+  const resetForm = () => {
+    setFirstName('');
+    setLastName('');
+    setGender('');
+    setIntro('');
+    setCharacter('');
+    setTime('');
+    setWork('');
+    setReading('');
+    setMath('');
+    setWriting('');
+    setClosure('');
+    setShowComment(false);
+    
   }
 
   function Comment ( {firstName, lastName, gender, intro, character, time, work, reading, math, writing, closure} )  {
@@ -43,9 +60,6 @@ const Builder = () => {
     )
 
   }
-
-
-
 
   return (
      <div className="container">
@@ -292,16 +306,18 @@ const Builder = () => {
                 Build Comment
               </Button>  
             </Row>
-            <Row>
-              <Card>
-                <CardBody>
-                <Comment firstName={firstName} lastName={lastName} intro={intro} character={character} time={time} work={work} reading={reading} math={math} writing={writing}
-                closure={closure}  />
-                </CardBody>
-              </Card>
-            
-             
-            </Row>
+            {showComment &&
+
+              <Row>
+                <Card>
+                  <CardBody>
+                    <Comment firstName={firstName} lastName={lastName} intro={intro} character={character} time={time} work={work} reading={reading} math={math} writing={writing}
+                      closure={closure}  />
+                    <Button color="info" onClick={resetForm}outline block>New Student</Button>
+                  </CardBody>
+                </Card>
+              </Row>
+}
           </Form> 
 
         </CardBody>

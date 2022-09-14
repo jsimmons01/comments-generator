@@ -16,20 +16,9 @@ import StudentComment from "./StudentComment";
        -change generate comment button color
        -change new student button color
        -finish fixing student info form (align the labels, )
+
     * add a read me file
     
-    * will need an array of comments based on behavior, personality, etc.  
-     
-************************************Aspirations*********************************
-
- * add comments to a document that teacher can send to themselves
- *update project with hooks
- *random comment generate
-
-
- 
-
- 
  *********************************************************************************************************************************/
 class StudentInfo extends Component {
   constructor(props) {
@@ -46,8 +35,8 @@ class StudentInfo extends Component {
     
     this.handleInputChange = this.handleInputChange.bind(this);
     this.toggleComment = this.toggleComment.bind(this);
-    this.addNewStudent = this.addNewStudent.bind(this);
-    //this.insertName = this.insertName.bind(this);
+    this.resetForm = this.resetForm.bind(this);
+   
   }
    
 
@@ -63,6 +52,7 @@ class StudentInfo extends Component {
 
   toggleComment(e){
     e.preventDefault();
+
     
     this.setState({
       showComment: !this.state.showComment,
@@ -71,17 +61,16 @@ class StudentInfo extends Component {
   
   }
 
-  addNewStudent(){
+  resetForm(){
     this.setState({
       firstName: " ",
       lastName: " ",
       gender: " ",
       type: "Average Performer",
       showComment: false
-
+      
     })
   }
-
 
   render() {
     return (
@@ -177,18 +166,22 @@ class StudentInfo extends Component {
          
               <FormGroup>
                 <Col>
-                  <Button type="submit" color={this.state.showComment ? 'info' : 'success'} size="lg" block>
-                  {this.state.showComment ? 'New Student' : 'Generate Comments'} 
+                  <Button type="submit" color={'success'}  size="lg" block>
+                  Generate Comments 
                   </Button>
                 </Col>
               </FormGroup>         
             </Form>
-            <Row>
-              <Col>
-              {this.state.showComment && <StudentComment firstName={this.state.firstName} lastName={this.state.lastName} gender={this.state.gender} type={this.state.type}  /> 
-            } 
-              </Col>
-            </Row>  
+           {this.state.showComment  &&
+           <Row>
+           <Col>
+            <StudentComment firstName={this.state.firstName} lastName={this.state.lastName} gender={this.state.gender} type={this.state.type} /> 
+           <Button size="lg" color="info" onClick={this.resetForm} outline block>New Student</Button>
+        
+           </Col>
+         </Row>  
+           
+           } 
            
           
        
