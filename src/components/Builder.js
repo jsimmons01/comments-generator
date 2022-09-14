@@ -7,7 +7,6 @@ const Builder = () => {
   /**************************
    * complete comments array
    * think about if I really need a toggler
-   * add gender to the comment
    * add directions
    */
 
@@ -19,10 +18,10 @@ const Builder = () => {
   const [character, setCharacter ] = useState('');
   const [time, setTime ] = useState('');
   const [work, setWork ] = useState('');
-  const [lang, setLang ] = useState('');
+  const [reading, setReading ] = useState('');
   const [math, setMath ] = useState('');
   const [writing, setWriting ] = useState('');
-  const [conclusion, setConclusion ] = useState('');
+  const [closure, setClosure ] = useState('');
 
 
   
@@ -33,10 +32,10 @@ const Builder = () => {
 
   }
 
-  function Comment ( {firstName, lastName, gender, intro, character, time, work, lang, math, writing, conclusion} )  {
+  function Comment ( {firstName, lastName, gender, intro, character, time, work, reading, math, writing, closure} )  {
      
     const studentComment = firstName + ' ' + lastName + ' ' + intro + ' ' + character + ' ' +  time + ' ' + 
-     work + ' ' + lang + ' ' +  math + ' ' +  writing + ' ' +  conclusion
+     work + ' ' + reading + ' ' +  math + ' ' +  writing + ' ' + firstName + ' ' + closure
     
     return (
       gender === 'girl' ? studentComment.replace(/Student/g, 'She').replace(/student/g, 'her') : studentComment.replace(/Student/g, 'He').replace(/student/g, 'his')
@@ -100,7 +99,7 @@ const Builder = () => {
                           className='mx-2'
                           type="radio"
                           name="gender"
-                          value="boy"
+                          value={gender}
                           
                           onChange={(e) => setGender(e.target.value)}
                           required
@@ -115,7 +114,7 @@ const Builder = () => {
                         className='mx-2'
                         type="radio"
                         name="gender"
-                        value="girl"
+                        value={gender}
                        
                         onChange={(e) => setGender(e.target.value)}
                         required
@@ -182,10 +181,7 @@ const Builder = () => {
                     onChange={(e) => setTime(e.target.value)}
                   >
                     <option>Select</option>
-                    <option>High Performer</option>
-                    <option>Average Performer</option>
-                    <option>Below Average Performer</option>
-                    <option>Behavior Problems</option>
+                    {comments.filter((comment) => comment.type === 'Time').map((comment) => <option key={comment.id}>{comment.text}</option>)} 
 
                   </Input>
                 </Col>
@@ -205,10 +201,7 @@ const Builder = () => {
                     onChange={(e) => setWork(e.target.value)}
                   >
                     <option>Select</option>
-                    <option>High Performer</option>
-                    <option>Average Performer</option>
-                    <option>Below Average Performer</option>
-                    <option>Behavior Problems</option>
+                    {comments.filter((comment) => comment.type === 'Work').map((comment) => <option key={comment.id}>{comment.text}</option>)} 
 
                   </Input>
                 </Col>
@@ -217,21 +210,18 @@ const Builder = () => {
             <Row>
               <FormGroup>
                 <Label htmlFor="type">
-                  Language Arts
+                  Reading
                 </Label>
                 <Col>
                   <Input
                     type="select"
                     id="type"
                     name="type"
-                    value={lang}
-                    onChange={(e) => setLang(e.target.value)}
+                    value={reading}
+                    onChange={(e) => setReading(e.target.value)}
                   >
                     <option>Select</option>
-                    <option>High Performer</option>
-                    <option>Average Performer</option>
-                    <option>Below Average Performer</option>
-                    <option>Behavior Problems</option>
+                    {comments.filter((comment) => comment.type === 'Reading').map((comment) => <option key={comment.id}>{comment.text}</option>)} 
 
                   </Input>
                 </Col>
@@ -251,10 +241,7 @@ const Builder = () => {
                     onChange={(e) => setMath(e.target.value)}
                   >
                     <option>Select</option>
-                    <option>High Performer</option>
-                    <option>Average Performer</option>
-                    <option>Below Average Performer</option>
-                    <option>Behavior Problems</option>
+                    {comments.filter((comment) => comment.type === 'Math').map((comment) => <option key={comment.id}>{comment.text}</option>)} 
 
                   </Input>
                 </Col>
@@ -274,10 +261,7 @@ const Builder = () => {
                     onChange={(e) => setWriting(e.target.value)}
                   >
                     <option>Select</option>
-                    <option>High Performer</option>
-                    <option>Average Performer</option>
-                    <option>Below Average Performer</option>
-                    <option>Behavior Problems</option>
+                    {comments.filter((comment) => comment.type === 'Writing').map((comment) => <option key={comment.id}>{comment.text}</option>)} 
 
                   </Input>
                 </Col>
@@ -286,21 +270,18 @@ const Builder = () => {
             <Row>
               <FormGroup>
                 <Label htmlFor="type">
-                  Conclusion
+                  Closure
                 </Label>
                 <Col>
                   <Input
                     type="select"
                     id="type"
                     name="type"
-                    value={conclusion}
-                    onChange={(e) => setConclusion(e.target.value)}
+                    value={closure}
+                    onChange={(e) => setClosure(e.target.value)}
                   >
                     <option>Select</option>
-                    <option>High Performer</option>
-                    <option>Average Performer</option>
-                    <option>Below Average Performer</option>
-                    <option>Behavior Problems</option>
+                    {comments.filter((comment) => comment.type === 'Closure').map((comment) => <option key={comment.id}>{comment.text}</option>)} 
 
                   </Input>
                 </Col>
@@ -314,8 +295,8 @@ const Builder = () => {
             <Row>
               <Card>
                 <CardBody>
-                <Comment firstName={firstName} lastName={lastName} intro={intro} character={character} time={time} work={work} lang={lang} math={math} writing={writing}
-                conclusion={conclusion}  />
+                <Comment firstName={firstName} lastName={lastName} intro={intro} character={character} time={time} work={work} reading={reading} math={math} writing={writing}
+                closure={closure}  />
                 </CardBody>
               </Card>
             
