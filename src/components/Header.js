@@ -1,31 +1,30 @@
-import { Navbar, Nav, NavItem } from 'reactstrap'
+import { Nav, NavItem } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 import "../App.css"
 
-
+/**************************************************
+ * -center navlinks
+      
+       -change active background
+       -fix navlink background color
+      
+ */
 
 
 const Header = () => {
 
   return (
-   <div className="container">
-       <Navbar light color='light' expand="md" className='nav-bar my-3'>
+   <div className="container my-4">
        
-       <Nav fill>
-          <NavItem> <NavLink className='nav-link' to="/" active >Home</NavLink></NavItem>
-          <NavItem><NavLink className='nav-link' to='/builder'>Builder</NavLink></NavItem>
-          <NavItem><NavLink className='nav-link' to='/resources'>Resources</NavLink></NavItem>    
+       
+       <Nav>
+          <NavItem active> <NavLink className="link" to="/" >Home</NavLink></NavItem>
+          <NavItem><NavLink className="link" to='/builder'>Builder</NavLink></NavItem>
+          <NavItem><NavLink  className="link" to='/resources'>Resources</NavLink></NavItem>    
        </Nav>
      
-      
-       </Navbar>   
-   </div>
      
-       
-        
-   
-   
-    
+   </div>
   )
 }
 

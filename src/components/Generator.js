@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Form, FormGroup, Label, Input, Col,Row, Card, CardBody, CardHeader } from "reactstrap";
+import { Button, Form, FormGroup, Label, Input, Col,Row } from "reactstrap";
 import { COMMENTS } from "../comments";
 import StudentComment from "./StudentComment";
 
@@ -8,11 +8,6 @@ import StudentComment from "./StudentComment";
 
 /*************************************************** TO DO**************************************************************************
   
-    * style page
-       -center navlinks
-       -change navlink color to black
-       -change active background
-       -change navbar background color
        -change generate comment button color
        -change new student button color
        -finish fixing student info form (align the labels, )
@@ -166,7 +161,7 @@ class StudentInfo extends Component {
          
               <FormGroup>
                 <Col>
-                  <Button type="submit" color={'success'}  size="lg" block>
+                  <Button className="generateComment-btn" type="submit" size="lg" block>
                   Generate Comments 
                   </Button>
                 </Col>
