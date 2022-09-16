@@ -20,7 +20,6 @@ const Header = () => {
        <Nav>
           <NavItem active> <NavLink className="link" to="/" >Home</NavLink></NavItem>
           <NavItem><NavLink className="link" to='/builder'>Builder</NavLink></NavItem>
-          <NavItem><NavLink  className="link" to='/resources'>Resources</NavLink></NavItem>    
        </Nav>
      
      
