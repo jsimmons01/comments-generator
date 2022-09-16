@@ -161,7 +161,7 @@ class StudentInfo extends Component {
          
               <FormGroup>
                 <Col>
-                  <Button className="generateComment-btn" type="submit" size="lg" block>
+                  <Button  color="success" type="submit" size="lg" block>
                   Generate Comments 
                   </Button>
                 </Col>

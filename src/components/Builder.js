@@ -302,7 +302,7 @@ const Builder = () => {
               </FormGroup>
             </Row>
             <Row className='m-2'>
-              <Button  className="comment" onClick={toggleComment} type='submit' size='lg'  block>
+              <Button  className="btn-comment" onClick={toggleComment} type='submit' size='lg'  block>
                 Build Comment
               </Button>  
             </Row>

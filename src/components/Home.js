@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container"> 
      
       <Card>
-      <CardHeader className='text-center' tag='h1'>
+      <CardHeader className='text-center card-header' tag='h1'>
             Comment Generator
           </CardHeader>
          
@@ -20,7 +20,7 @@ const Home = () => {
      
       </Card>
       <Card className='my-5'>
-        <CardHeader className='text-center' tag="h2">
+        <CardHeader className='text-center card-header' tag="h2">
           Adjectives
         </CardHeader>
         <CardBody>
