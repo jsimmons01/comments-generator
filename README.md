@@ -1,4 +1,4 @@
-#Comments Generator
+
 I created this project for teachers because in my experience report card comments were always a challenge to start. The purpose of the project is to give teachers a template on writing their report card comments. I provide generic comments for teachers to copy and paste so that they can get started. 
 
 #How it Works
