@@ -8,6 +8,8 @@ Update the description
 
 I created this project for teachers because in my experience report card comments were always a challenge to start. The purpose of the project is to give teachers a template on writing their report card comments. I provide generic comments for teachers to copy and paste so that they can get started. 
 
+Default colors - I spent an extensive amount of time (2-4 hours) trying to figure out how to change teh default colors and after researching for a few minutes I figured out it is way more simple than I thought. Inline css. I'm glad I figured that out because I was trying to change the theming colors. I could still try to do that later down the line, but for now, I will stick to what I know. 
+
 
 # Teachers have the option to generate a list of comments based on a type (achievement level or behavior) or they can build their own comments by selecting the statement. 
 
