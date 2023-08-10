@@ -9,11 +9,11 @@ const Home = () => {
       <div className="container"> 
      
       <Card>
-      <CardHeader className='text-center card-header' tag='h1'>
+      <CardHeader className='text-center card-header' tag='h1' style={{background:"#D1DADD"}}>
             Comment Generator
           </CardHeader>
          
-          <CardBody>
+          <CardBody style={{background:"#D1DADD"}}>
             <Directions />
           <Generator /> 
           </CardBody>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Button, Form, FormGroup, Label, Input, Col,Row } from "reactstrap";
 import { COMMENTS } from "../comments";
 import StudentComment from "./StudentComment";
@@ -161,7 +161,7 @@ class StudentInfo extends Component {
          
               <FormGroup>
                 <Col>
-                  <Button  color="success" type="submit" size="lg" block>
+                  <Button  style={{background:'#79B36D'}} type="submit" size="lg" block>
                   Generate Comments 
                   </Button>
                 </Col>
