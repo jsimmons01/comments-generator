@@ -3,6 +3,7 @@
 ## Description
 
 Update the description
+I map through comments array and return the including student's name and correct pronouncs
 
 ## What did I learn?
 

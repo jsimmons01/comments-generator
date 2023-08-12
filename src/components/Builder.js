@@ -64,10 +64,10 @@ const Builder = () => {
   return (
      <div className="container">
       <Card className='m-2'>
-        <CardHeader className='text-center card-body' tag='h1'>
+        <CardHeader className='text-center card-body' tag='h1' style={{background:'#79B36D'}}>
           Comment Builder
         </CardHeader>
-        <CardBody>
+        <CardBody style={{background:'#79B36D'}}>
         <Form>
             <Row>
               <Col md={6}>
