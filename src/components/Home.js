@@ -20,10 +20,10 @@ const Home = () => {
      
       </Card>
       <Card className='my-5'>
-        <CardHeader className='text-center card-header' tag="h2">
+        <CardHeader className='text-center card-header' tag="h2" style={{background:"#D1DADD"}}>
           Adjectives
         </CardHeader>
-        <CardBody>
+        <CardBody style={{background:"#D1DADD"}}>
         <Adjectives />
         </CardBody>
       </Card>
