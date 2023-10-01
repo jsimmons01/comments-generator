@@ -111,6 +111,7 @@ const Builder = () => {
                       <Input
                           className='mx-2'
                           type="radio"
+                          id="boy"
                           name="boy"
                           value={gender}
                           
@@ -126,6 +127,7 @@ const Builder = () => {
 
                         className='mx-2'
                         type="radio"
+                        id="girl"
                         name="girl"
                         value={gender}
                        
