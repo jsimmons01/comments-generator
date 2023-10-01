@@ -5,10 +5,9 @@ import { BUILDERCOMMENTS } from '../builderComments';
 
 const Builder = () => {
   /**************************
-   * add directions
+ 
    * make the card smaller for both generator and builder
-   
-   * fix radio button on reset defaults to the opposite of previously chosen button
+  
    */
 
   const comments = BUILDERCOMMENTS;
