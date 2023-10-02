@@ -57,7 +57,7 @@ const Builder = () => {
       gender === 'girl' ? studentComment.replace(/Student/g, 'She').replace(/student/g, 'her') : studentComment.replace(/Student/g, 'He').replace(/student/g, 'his')
      
     )
-  console.log({gender})
+  
   }
 
   return (
