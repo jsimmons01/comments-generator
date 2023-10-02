@@ -3,18 +3,6 @@ import { Button, Form, FormGroup, Label, Input, Col,Row } from "reactstrap";
 import { COMMENTS } from "../comments";
 import StudentComment from "./StudentComment";
 
-
-
-
-/*************************************************** TO DO**************************************************************************
-  
-       -change generate comment button color
-       -change new student button color
-       -finish fixing student info form (align the labels, )
-
-    * add a read me file
-    
- *********************************************************************************************************************************/
 class StudentInfo extends Component {
   constructor(props) {
     super(props);
