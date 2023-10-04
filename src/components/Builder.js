@@ -112,6 +112,7 @@ const Builder = () => {
                           className='mx-2'
                           type="radio"
                           name="gender"
+                          id="boy"
                           value={gender}
                           
                           onChange={(e) => setGender(e.target.value)}
@@ -127,6 +128,7 @@ const Builder = () => {
                         className='mx-2'
                         type="radio"
                         name="gender"
+                        id="girl"
                         value={gender}
                        
                         onChange={(e) => setGender(e.target.value)}
