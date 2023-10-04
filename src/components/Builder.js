@@ -312,7 +312,7 @@ const Builder = () => {
               <Row>
                 <Card>
                   <CardBody>
-                    <Comment firstName={firstName} lastName={lastName} intro={intro} character={character} time={time} work={work} reading={reading} math={math} writing={writing}
+                    <Comment firstName={firstName} lastName={lastName} gender={gender} intro={intro} character={character} time={time} work={work} reading={reading} math={math} writing={writing}
                       closure={closure}  />
                     <Button color="info" onClick={resetForm}outline block>New Student</Button>
                   </CardBody>
